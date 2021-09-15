@@ -1,16 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&family=Slackey&display=swap');
+
+:root {
+    /* fonts */
+    --head-font: 'Slackey', cursive;
+    --body-font: 'Raleway', sans-serif;
+
+    /* colors */
+    --back: #F9F8F6;
+    --purple1: #d8b6d6;
+    --purple2: #c966c2;
+    --pink: #fce7ef;
+}
+
 * {
     margin: 0;
     padding: 0;
 }
 
-label {
+body {
+    font-family: var(--body-font);
+    text-align: center;
+}
+
+header {
+    background-color: var(--purple1);
+    color: white;
+    font-family: var(--head-font);
+    font-size: 20px;
+    padding: 2rem;
+}
+
+.container {
+    background: url('/images/img2.jpg');
+    background-size: contain;
+    padding: 4rem 2rem;
+}
+
+.container-inner {
+    background-color: #faebf1cc;
+    max-width: 500px;
+    padding: 2rem;
+    border-radius: 2rem;
+    margin: auto;
+}
+
+.text {
+    color: var(--purple2);
+    font-size: 17px;
+}
+
+.text span {
     display: block;
+    font-size: 20px;
+    font-weight: bold;
+    padding-bottom: 0.5rem;
+}
+
+label {
+    color: var(--purple2);
+    font-weight: bold;
+    display: block;
+    padding-top: 2rem;
+    padding-bottom: 0.3rem;
 }
 
 input {
     display: block;
+    background-color: var(--back);
+    color: var(--purple2);
+    font-family: var(--body-font);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0.7rem 2rem;
+    border: 2px solid var(--purple2);
+    border-radius: 1rem;
+    margin: auto;
 }
 
 button {
     display: block;
+    background-color: var(--purple2);
+    color: var(--back);
+    font-family: var(--body-font);
+    font-size: 17px;
+    font-weight: bold;
+    padding: 0.5rem 2rem;
+    border: 3px solid var(--purple2);
+    border-radius: 2rem;
+    margin: 2rem auto 0rem auto;
+    transition: 0.7s ease;
+}
+
+button:hover {
+    background-color: var(--back);
+    color: var(--purple2);
+}
+
+footer {
+    background-color: var(--purple1);
+    padding: 1.5rem 2rem 0.5rem 2rem;
+}
+
+.social-media-title {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.social-media a {
+    text-decoration: none;
+}
+
+svg {
+    fill: white;
+    width: 35px;
+    height: 35px;
+    padding: 0.2rem;
+    margin: 0.7rem;
+    
+}
+
+svg:hover {
+    background-color: var(--back);
+    fill: var(--purple1);
+    border-radius: 0.7rem;
+}
+
+.github-sourcecode {
+    color: white;
+    font-size: 15px;
+}
+
+.git-repo {
+    color: white;
+    border: 3px solid var(--purple1);
+    border-radius: 0.3rem;
+}
+
+.git-repo:hover {
+    background-color: var(--back);
+    color: var(--purple1);
+    border-color: var(--back);
 }

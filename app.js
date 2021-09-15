@@ -5,7 +5,7 @@ var messageDisplay = document.querySelector("#message");
 
 checkButton.addEventListener("click", () => {
     if (dob.value && luckyNumber.value) {
-        compareDateAndNumber(calculateSum(dob.value), luckyNumber.value);
+        compareDateAndNumber(calculateSum(dob.value), Number(luckyNumber.value));
     } else {
         showMessage("Enter values in both fields to continue");
     }
