@@ -4,6 +4,8 @@ var checkButton = document.querySelector("#button-check");
 var messageDisplay = document.querySelector("#message");
 
 checkButton.addEventListener("click", () => {
+    messageDisplay.style.display = "block";
+    
     if (dob.value && luckyNumber.value) {
         compareDateAndNumber(calculateSum(dob.value), Number(luckyNumber.value));
     } else {

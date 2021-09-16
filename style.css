@@ -71,6 +71,7 @@ input {
     font-family: var(--body-font);
     font-size: 20px;
     font-weight: bold;
+    max-width: 70%;
     padding: 0.5rem 1rem;
     border: 2px solid var(--purple2);
     border-radius: 1rem;
@@ -98,6 +99,7 @@ button:hover {
 }
 
 #message {
+    display: none;
     background-color: var(--purple2);
     color: var(--back);
     font-family: var(--head-font);
@@ -154,4 +156,10 @@ svg:hover {
     background-color: var(--back);
     color: var(--purple1);
     border-color: var(--back);
+}
+
+.privacy-note {
+    color: white;
+    font-size: 12px;
+    padding-top: 0.3rem;
 }
